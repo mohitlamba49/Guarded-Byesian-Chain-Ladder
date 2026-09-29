@@ -13,7 +13,6 @@ This repository provides the core modules, data preparation tools, and empirical
 *   `examples/` — Minimal end-to-end single triangle execution script.
 *   `pseudocode/` — Mathematical specifications for the batch simulation engine, two-change experiment, rolling backtests, and AICc/Mack benchmarks.
 *   `data/` — Provenance documentation, exclusion mappings, and table data schemas.
-*   `results/` — Final compact summary tables used in the manuscript.
 *   `tests/` — Automated unit and verification checks.
 
 ---
@@ -64,13 +63,4 @@ python scripts/prepare_schedule_p.py --download
 ```
 Data cleaning filters row conditions, applies data quality flags, and isolates the final matrix of **42 insurer-line triangles** nested within **32 `GRCODE` insurer groups**.
 
----
 
-## Empirical Post-Processing
-
-After stacking model-specific forecasts into a unified, long-format CSV layout, execute the clustered bootstrap and interval calibration pipeline:
-
-```bash
-python scripts/postprocess_empirical.py --input path/to/method_results.csv --output results/postprocessed
-```
-The routine performs a leave-one-group-out validation, sampling by `GRCODE` clusters to handle internal within-group dependence structures.
