@@ -1,6 +1,6 @@
 # Guarded Bayesian Chain-Ladder (GBCL)
 
-Reference implementation and result archive for **“Guarded Bayesian Chain-Ladder Reserving under Uncertain Calendar-Year Change”** (Mohit Lamba and Harmanpreet Singh Kapoor).
+Reference implementation for **“Guarded Bayesian Chain-Ladder Reserving under Uncertain Calendar-Year Change”** (Mohit Lamba and Harmanpreet Singh Kapoor).
 
 This repository provides the core modules, data preparation tools, and empirical post-processing pipelines used in the paper. Large-scale simulation loops and backtest batch scripts are provided as verified mathematical pseudocode in `pseudocode/`.
 
